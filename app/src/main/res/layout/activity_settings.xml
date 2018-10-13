@@ -14,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:src="@drawable/male_avatar" />
+        android:src="@drawable/avatar" />
 
     <TextView
         android:id="@+id/settings_display_name"
@@ -59,7 +59,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="59dp"
-        android:background="@color/colorAccent"
+
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="Change Status" />

@@ -4,19 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UsersActivity"
-    >
+    tools:context=".Splash"
+    android:background="@drawable/gradient">
 
-<include layout="@layout/app_bar_layout" android:id="@+id/users_AppBar"/>
-
-    <ListView
-        android:id="@+id/users_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/users_AppBar">
-
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"
+        />
 
 
-    </ListView>
+
 
 </RelativeLayout>

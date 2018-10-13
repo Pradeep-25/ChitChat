@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+
     >
 
     <include layout="@layout/app_bar_layout" android:id="@+id/main_app_bar"/>
@@ -30,7 +31,10 @@
         android:layout_marginBottom="10dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:text="Send" />
+        android:text="Send"
+        android:textColor="#ffffff"
+        android:background="#1f668f"
+        />
 
     <ListView
         android:layout_width="match_parent"

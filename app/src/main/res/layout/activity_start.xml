@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".start">
+    tools:context=".start"
+    android:background="@drawable/gradient"
+  >
 
     <TextView
         android:id="@+id/textView"
@@ -22,7 +24,13 @@
         android:layout_alignStart="@+id/start_login_button"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="186dp"
-        android:text="@string/need_a_new_account" />
+        android:background="@color/colorPrimary"
+        android:paddingLeft="20dp"
+
+        android:paddingRight="20dp"
+        android:text="@string/need_a_new_account"
+        android:textSize="16dp" />
+
 
     <Button
         android:id="@+id/start_login_button"
@@ -31,5 +39,21 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="108dp"
-        android:text="@string/already_have_account" />
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="20dp"
+
+
+        android:paddingRight="10dp"
+        android:text="ALREADY HAVE ACCOUNT"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_above="@id/textView"/>
 </RelativeLayout>

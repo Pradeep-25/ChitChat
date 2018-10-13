@@ -22,6 +22,7 @@ public class SettingsActivity extends AppCompatActivity {
     private DatabaseReference mUserDatabase;
     private FirebaseUser mCurrentUser;
 
+
     //Android LAyout
      private CircleImageView mDisplayimage;
      private TextView mName;
@@ -43,6 +44,7 @@ public class SettingsActivity extends AppCompatActivity {
         String current_uid=mCurrentUser.getUid();
         mUserDatabase= FirebaseDatabase.getInstance().getReference().child("Users").child(current_uid);
 
+
         mUserDatabase.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -62,6 +64,8 @@ public class SettingsActivity extends AppCompatActivity {
 
             }
         });
+
+
 
         mStatusBtn.setOnClickListener(new View.OnClickListener() {
             @Override
